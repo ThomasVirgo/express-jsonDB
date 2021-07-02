@@ -57,7 +57,7 @@ app.delete('/:title', (req, res) => {
     }
     //save the filtered data
     saveData(updatedPosts)
-    res.send({success: true, message: 'Post removed successfully'})
+    res.status(204).send({success: true, message: 'Post removed successfully'})
 })
 
 
